@@ -6,6 +6,12 @@ class DbTechTest < Sinatra::Base
     'Hello DbTechTest!'
   end
 
+  get '/set' do
+
+    erb(:set)
+
+  end
+
 
 
   # start the server if ruby file executed directly
