@@ -1,9 +1,15 @@
+require './app'
+
 class DataStorage
 
-  attr_reader :data
+  attr_reader :query_data
 
-  def store(key,value)
-    @data = {:key => value}
+  def initialize
+    @query_data = {}
+  end
+
+  def store(params)
+    @query_data = params
   end
 
 end
